@@ -1,0 +1,391 @@
+/*首页样式*/
+/* 字体声明 注意路径变化 */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?p4ssmb');
+  src:  url('../fonts/icomoon.eot?p4ssmb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?p4ssmb') format('truetype'),
+    url('../fonts/icomoon.woff?p4ssmb') format('woff'),
+    url('../fonts/icomoon.svg?p4ssmb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/*主模块*/
+.main {
+	margin: 10px 0px 0px 219px;
+	width: 980px;
+	height: 455px;	
+}
+
+/*轮播图*/
+.focus {
+	float: left;
+	margin-right: 10px;
+	width: 720px;
+	height: 455px;	
+}
+
+/*新闻快报*/
+.newsflash {
+	float: left;
+	width: 250px;
+	height: 455px;
+}
+
+/*新闻*/
+.newsflash .news {
+	height: 165px;
+	border: 1px solid #ededed;
+}
+
+/*标题*/
+.newsflash .news h4 {
+	position: relative;
+	padding: 0px 16px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: 400;
+	border-bottom: 1px dashed #ededed;
+}
+
+.newsflash .news h4 a {
+	float: right;
+	margin-right: 8px;
+	font-size: 12px;
+}
+
+.newsflash .news h4 a::after {
+	position: absolute;
+	top: 1px;
+	right: 8px;
+	font-family: 'icomoon';
+	content: "\e926";
+}
+
+/*内容*/
+.newsflash .news ul li {
+	padding: 0px 16px;
+	margin-top: 5px;
+	height: 20px;
+	line-height: 20px;
+	/*文字溢出省略号代替*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*链接*/
+.lifeservice {
+	margin-bottom: 5px;
+	height: 210px;
+	background: url(../images/icons.png) no-repeat;
+	border-left:1px solid #ededed;
+}
+
+/*每一个链接浮动*/
+.lifeservice ul li a {
+	display: inline-block;
+	float: left;
+	width: 25%;
+	height: 70px;
+	text-align: center;
+	line-height: 110px;
+	border-bottom: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+}
+
+
+/*推荐模块*/
+.recom {
+	margin-top: 10px;
+	height: 163px;	
+}
+
+.recom-hd {
+	float: left;
+	width: 206px;
+	height: 163px;
+}
+
+.recom-bd {
+	float: left;
+	width: 994px;
+	height: 163px;
+}
+
+.recom-bd ul li {
+	float: left;
+	width: 248px;
+	height: 100%;
+	background-color: #ebebeb;
+}
+
+.recom-bd ul li img {
+	width: 248px;
+	height: 163px;
+}
+
+/*猜你喜欢模块*/
+.maylike {
+	margin-top: 26px;
+	height: 280px;
+}
+
+/*标题*/
+.maylike-hd {
+	height: 32px;
+}
+
+.maylike-hd h4 {
+	float: left;
+	font-size: 18px;
+	font-weight: 400;
+	color: #494949;
+}
+
+.maylike-hd span {
+	float: right;
+	font-size: 12px;
+	color: #666666;
+}
+
+/*插入字体图标*/
+.maylike-hd span::after {
+	content: "\e901";
+	font-family: 'icomoon';
+	padding: 0px 16px 0px 8px;
+}
+
+/*商品内容*/
+.maylike-bd {
+	height: 232px;
+	border: 1px solid #ededed;
+}
+
+.maylike-bd ul {
+	width: 1202px;
+	height: 230px;
+}
+.maylike-bd ul li {
+	float: left;
+	width: 200px;
+	height: 230px;
+}
+
+.maylike-bd ul li h6,
+.maylike-bd ul li p {
+	padding: 0px 20px;
+	font-weight: 400;
+}
+
+.maylike-bd ul li p {
+	font-size: 18px;
+	font-weight: 700;
+	color: #df3033;
+}
+
+.maylike-bd ul li p::before {
+	content: "￥";
+	font-size: 14px;
+	font-family:Arial;
+}
+
+
+.maylike-png {
+	width: 200px;
+	height: 160px;
+	line-height: 160px;
+	text-align: center;
+}
+
+
+/*有趣区*/
+.interest {
+	margin-top: 14px;
+	height: 434px;
+}
+
+/*标题*/
+.interest-hd {
+	height: 28px;
+	font-size: 18px;
+}
+
+.interest-hd h4 {
+	font-weight: 400;
+	line-height: 16px;
+}
+
+/*内容*/
+.interest-bd {
+	height: 406px;
+	border: 1px solid #ededed;
+}
+
+.interest-bd div {
+	float: left;
+}
+
+.book {
+	width: 404px;
+}
+
+/*商品推荐*/
+.shop h5 {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	border-bottom: 1px dashed #ededed;
+}
+
+.shop p {
+	display: block;
+	padding: 60px 0px 0px 10px;
+}
+
+.shop ul li img {
+	float: right;
+}
+
+.shop .first {
+	height: 206px;
+	border-bottom: 1px solid #ededed;
+}
+
+.shop .first img {
+	padding-top: 24px;
+}
+
+.shop ul li:nth-child(n+2) img {
+	padding-top: 12px;
+}
+
+/*好东西*/
+.shop-goods	{
+	width: 230px;
+	border-right: 1px solid #ededed;
+}
+
+
+/*品牌街*/
+.shop-brand {
+	width: 400px;
+}
+
+.shop-brand ul li, 
+.shop-brand h5 {
+	border-right: 1px solid #ededed;
+}
+
+.shop-brand ul li:nth-child(n+2) {
+	float: left;
+	width: 50%;
+	height: 160px;
+
+}
+
+.shop-brand .first p {
+	padding-left: 40px;
+}
+
+.cobrand img {
+	width: 164px;
+	height: 404px;
+}
+
+/*楼层区域----------------------------------------------------*/
+
+.floor {
+	margin-top: 24px;
+}
+
+/*家用电器*/
+
+.appliances {
+	height: 480px;
+}
+
+.appliances-hd {
+	height: 30px;
+	font-size: 18px;
+	border-bottom: 2px solid #c81623;
+}
+
+.appliances-hd h4 {
+	float: left;
+	font-weight: 400;
+}
+
+.tab_list {
+	float: right;
+	margin-right: 12px;
+	font-size: 12px;
+}
+
+.tab_list ul li {
+	float: left;
+}
+
+.tab_list ul li span {
+	padding: 0px 12px;
+}
+
+.appliances-bd {
+	height: 360px;
+}
+
+.appliances-bd-aside {
+	float: left;
+	width: 210px;
+	height: 100%;
+	text-align: center;
+}
+
+.appliances-bd-aside ul li a {
+	display: inline-block;
+	float: left;
+	margin-left: 11px;
+	width: 88px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 12px;
+	border-bottom: 1px solid #ededed;
+}
+
+.appliances-bd-aside img {
+	margin-top: 24px;
+}
+
+.appliances-bd-focus {
+	float: left;
+	width: 330px;
+}
+
+.appliances-bd-shop ul {
+	float: left;
+	width: 220px;
+	height: 360px;
+	text-align: center;
+}
+
+.appliances-bd-shop ul li {
+	border-bottom: 1px solid #ededed;
+}
+
+.shop-top li,
+.shop-bottom li {
+	height: 180px;
+}
+
+.shop-middle li {
+	padding: 60px 0px;
+	height: 360px;
+	border-left: 1px solid #ededed;
+	border-right:  1px solid #ededed;
+}
+
